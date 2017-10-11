@@ -26,7 +26,7 @@
   }, {
     "label" : "Link 3",
     "icon" : "wi wi-euro-symbol",
-    "link" : "MenuTestApp2"
+    "link" : "/MenuTestApp1"
   }, {
     "label" : "Link 4",
     "icon" : "wi wi-euro-symbol"
