@@ -1,0 +1,31 @@
+{
+  "PopulateLinksDataController_getJSONFile" : {
+    "controller" : "PopulateLinksDataController",
+    "wmServiceOperationInfo" : {
+      "methodType" : "get",
+      "relativePath" : "/populateLinksData/jSONFile",
+      "name" : "getJSONFile",
+      "produces" : [ "application/json" ],
+      "directPath" : "/populateLinksData/jSONFile",
+      "proxySettings" : {
+        "web" : true,
+        "mobile" : true
+      },
+      "httpMethod" : "get",
+      "parameters" : [ {
+        "parameterType" : "query",
+        "name" : "fileName",
+        "readOnly" : false,
+        "type" : "java.lang.String",
+        "contentType" : null,
+        "required" : false
+      } ],
+      "definitions" : { },
+      "consumes" : null
+    },
+    "service" : "PopulateLinksData",
+    "operationType" : null,
+    "id" : "PopulateLinksDataController_getJSONFile",
+    "type" : null
+  }
+}

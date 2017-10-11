@@ -1,0 +1,37 @@
+{
+  "navdata" : [ {
+    "label" : "google",
+    "link" : "https://www.google.com",
+    "roles" : [ "admin", "manager" ]
+  }, {
+    "label" : "facebook",
+    "link" : "https://www.facebook.com"
+  }, {
+    "label" : "Menu 1",
+    "icon" : "wi wi-euro-symbol",
+    "children" : [ {
+      "label" : "sub-menu-item1",
+      "icon" : "wi wi-euro-symbol"
+    }, {
+      "label" : "sub-menu-item2",
+      "icon" : "wi wi-euro-symbol",
+      "children" : [ {
+        "label" : "sub-menu-child-item1",
+        "icon" : "wi wi-euro-symbol"
+      }, {
+        "label" : "sub-menu-child-item2",
+        "icon" : "wi wi-euro-symbol"
+      } ]
+    } ]
+  }, {
+    "label" : "Link 3",
+    "icon" : "wi wi-euro-symbol",
+    "link" : "MenuTestApp2"
+  }, {
+    "label" : "Link 4",
+    "icon" : "wi wi-euro-symbol"
+  }, {
+    "label" : "Link 5",
+    "icon" : "wi wi-euro-symbol"
+  } ]
+}

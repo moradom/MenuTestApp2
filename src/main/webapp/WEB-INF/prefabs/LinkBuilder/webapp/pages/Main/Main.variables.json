@@ -1,0 +1,57 @@
+{
+  "serviceVariable1" : {
+    "_id" : "wm-serviceVariable1-wm.ServiceVariable-1500455238338",
+    "name" : "serviceVariable1",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "fileName",
+      "value" : "resources/link.json",
+      "type" : "string"
+    } ],
+    "service" : "PopulateLinksData",
+    "operation" : "getJSONFile",
+    "operationId" : "PopulateLinksDataController_getJSONFile",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "onSuccess" : "serviceVariable1onSuccess($event, $scope)",
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "PopulateLinksData"
+  },
+  "staticVariable1" : {
+    "_id" : "wm-staticVariable1-wm.Variable-1500448923721",
+    "name" : "staticVariable1",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "label" : "google",
+      "link" : "https://www.google.com"
+    }, {
+      "label" : "facebook",
+      "link" : "https://www.facebook.com"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  },
+  "supportedLocale" : {
+    "_id" : "wm-wm.Variable1402640443182",
+    "name" : "supportedLocale",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataSet" : {
+      "en" : "English"
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  }
+}

@@ -1,0 +1,106 @@
+<style id="Main.css">
+</style>
+<script id="Main.js">
+Application.$controller("LinkBuilderController", ["$scope", function($scope) {
+    "use strict";
+
+    /*
+     * This function will be invoked when any of this prefab's property is changed
+     * @key: property name
+     * @newVal: new value of the property
+     * @oldVal: old value of the property
+     */
+    function propertyChangeHandler(key, newVal, oldVal) {
+            /*
+		switch (key) {
+			case "prop1":
+				// do something with newVal for property 'prop1'
+				break;
+			case "prop2":
+				// do something with newVal for property 'prop2'
+				break;
+		}
+		*/
+        }
+        /* register the property change handler */
+    $scope.propertyManager.add($scope.propertyManager.ACTIONS.CHANGE, propertyChangeHandler);
+
+    $scope.onInitPrefab = function() {
+        // this method will be triggered post initialization of the prefab.
+    };
+
+    $scope.serviceVariable1onSuccess = function(variable, data) {
+        $scope;
+        debugger;
+    };
+
+}]);
+</script>
+<script id="Main.variables.json">
+var _MainPage_Variables_ ={
+  "serviceVariable1" : {
+    "_id" : "wm-serviceVariable1-wm.ServiceVariable-1500455238338",
+    "name" : "serviceVariable1",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "fileName",
+      "value" : "resources/link.json",
+      "type" : "string"
+    } ],
+    "service" : "PopulateLinksData",
+    "operation" : "getJSONFile",
+    "operationId" : "PopulateLinksDataController_getJSONFile",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "onSuccess" : "serviceVariable1onSuccess($event, $scope)",
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "PopulateLinksData"
+  },
+  "staticVariable1" : {
+    "_id" : "wm-staticVariable1-wm.Variable-1500448923721",
+    "name" : "staticVariable1",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataBinding" : [ ],
+    "dataSet" : [ {
+      "label" : "google",
+      "link" : "https://www.google.com"
+    }, {
+      "label" : "facebook",
+      "link" : "https://www.facebook.com"
+    } ],
+    "type" : "string",
+    "isList" : true,
+    "saveInPhonegap" : false
+  },
+  "supportedLocale" : {
+    "_id" : "wm-wm.Variable1402640443182",
+    "name" : "supportedLocale",
+    "owner" : "Page",
+    "category" : "wm.Variable",
+    "dataSet" : {
+      "en" : "English"
+    },
+    "type" : "string",
+    "isList" : false,
+    "saveInPhonegap" : false
+  }
+}
+</script>
+<script id="Main.html" type="text/ng-template">
+<wm-page data-ng-controller="LinkBuilderController" name="page1"> 
+    <wm-content name="content1"> 
+        <wm-navbar title="Brand" name="navbar1"> 
+            <wm-nav type="navbar" class="navbar-left" name="nav1" dataset="bind:Variables.serviceVariable1.dataSet.navdata"></wm-nav> 
+        </wm-navbar> 
+    </wm-content> 
+</wm-page>
+</script>
